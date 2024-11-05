@@ -187,8 +187,13 @@ body {
 } */
 
 @media screen and (max-width: 600px) {
+    .main-container {
+        width: 100%;
+    }
+
     .title-container {
         padding: 10px !important;
+        margin-top: 10px !important;
     }
 
     .title-container h2 {
@@ -221,6 +226,11 @@ body {
     .task {
         padding: 15px;
         font-size: 12px;
+    }
+
+    .operation button {
+        font-size: 10px;
+        width: 7%;
     }
 }
 
