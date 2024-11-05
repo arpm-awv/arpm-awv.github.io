@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo List with Javascript</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://kit.fontawesome.com/901d7d049c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="title-container animate__animated animate__fadeInDown">
+      <img src="ARPMLogo_wht.png" alt="logo image" id="logo">
+      <h2>Add a task...</h2>
+      <form class="input-form">
+        <div id="line-one">
+          <input id="task-input" type="text" placeholder="Enter task here..."
+            class="animate__animated animate__fadeInLeft">
+          <button id="add-task-btn" type="button" class="animate__animated animate__fadeInRight">Add</button>
+          <button id="save-tasks-btn" type="button" class="animate__animated animate__fadeInRight" data-toggle="tooltip"
+            data-placement="bottom" title="Save Tasks"><i class="fa-solid fa-download fa-lg"
+              id="save-tasks"></i></button>
+          <button id="load-tasks-btn" type="button" class="animate__animated animate__fadeInRight" data-toggle="tooltip"
+            data-placement="bottom" title="Load Tasks"><i class="fa-solid fa-upload fa-lg" id="load-tasks"></i></button>
+        </div>
+        <div id="line-two"><input type="file" id="fileInput" accept=".txt,Text" class=""></div>
+      </form>
+    </div>
+
+    <div class="task-container animate__animated animate__fadeInRight">
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="FileSaver.js"></script>
+</body>
+
+</html>
